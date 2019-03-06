@@ -56,8 +56,8 @@ def decode(s):
         scores.append((score(decrypted_str), decrypted_str, decrypted, key))
 
     best = max(scores)
-    print(best)
+    return best
 
 if __name__ == "__main__":
     s = '1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'
-    decode(s)
+    print(decode(s))
